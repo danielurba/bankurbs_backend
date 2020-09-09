@@ -1,7 +1,7 @@
 module.exports = app => {
     const login = async (req, res) => {
         if(!req.body.email || !req.body.password) {
-            return res.status(400).send('Informa Usuário e Senha !')
+            return res.status(400).send('Informar Usuário e Senha !')
         }
 
         const user = await app.db('users')
